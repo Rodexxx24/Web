@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+</head>
+<body>
+
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="4" align="center">
+                <img src="logo-resto.JPEG" alt="logo-restoran">
+                <h3><u>Bukti Pemesanan</u></h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Nama Pelayan: <b>Raymond Thymotimannuel</b></td>
+            <td colspan="2">Tanggal Pemesanan: <input type="date"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Nama Pemesan: <b>Ir. H. Mulyono</b></td>
+            <td colspan="2">Alamat Pemesan: Jl. Hiu Putih 29 No. 8, Kota Palangka Raya</td>
+        </tr>
+        <tr>
+            <th>Nama Menu</th>
+            <th>Jumlah</th>
+            <th>Harga Satuan</th>
+            <th>Total Harga</th>
+        </tr>
+        <tr>
+            <td>
+                    <img src="nasi-goreng.JPEG" alt="Nasi Goreng Spesial">
+                    <br>
+                    Nasi Goreng Spesial
+            </td>
+            <td><input type="number" name="jumlah_nasi" value="1" min="1"> Porsi</td>
+            <td>Rp 25.000</td>
+            <td>Rp 25.000</td>
+        </tr>
+        <tr>
+            <td>
+                    <img src="es-teh-manis.JPEG" alt="Es Teh Manis">
+                    <br>
+                    Es Teh Manis
+            </td>
+            <td><input type="number" name="jumlah_teh" value="1" min="1"> Gelas</td>
+            <td>Rp 5.000</td>
+            <td>Rp 5.000</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"><b>Total Pesanan</b></td>
+            <td>Rp 30.000</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"><b>Pajak</b></td>
+            <td>Rp 2.000</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"><b>Total Tagihan</b></td>
+            <td>Rp 32.000</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+              <p><b>Metode Pembayaran:</b></p>
+                <input type="radio" name="payment" value="bca"> Bank BCA
+                <input type="radio" name="payment" value="bri"> Bank BRI
+                <input type="radio" name="payment" value="ovo"> OVO
+                <input type="radio" name="payment" value="gopay"> GoPay
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <ul>
+                    <li>Nama: Raymond Thymotimannuel</li>
+                    <li>NIM: 2309106067</li>
+                    <li>Praktikum Web: <a href="#">Posttest 1</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
