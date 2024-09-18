@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posttest 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-resto"><img src="logo-resto.jpeg" alt="resto" /></div>
+      <ul class="opsi">
+        <li>Menu</li>
+        <li>Promo</li>
+        <li>Tentang kami</li>
+        <li class="keranjang">Keranjang (2)</li>
+      </ul>
+      <button class="tombol">=</button>
+    </nav>
+    <div class="kontainer">
+      <h1 class="heading">Keranjang</h1>
+      <div class="grid-container">
+        <div class="section item-keranjang">
+          <div class="gambar">
+            <img src="nasi-goreng.jpeg" alt="nasi-goreng" />
+          </div>
+          <div class="jual">
+            <div class="jdl-menu">Nasi goreng spesial</div>
+            <div class="hrg-menu">Rp25.000 / porsi</div>
+            <div><input type="number" value="1" /></div>
+          </div>
+          <div><b>Rp25.000</b></div>
+        </div>
+        <div class="section item-keranjang">
+          <div class="gambar">
+            <img src="es-teh-manis.jpeg" alt="nasi-goreng" />
+          </div>
+          <div class="jual">
+            <div class="jdl-menu">Es teh manis</div>
+            <div class="hrg-menu">Rp5.000 / porsi</div>
+            <div><input type="number" value="1" /></div>
+          </div>
+          <div><b>Rp5.000</b></div>
+        </div>
+        <div class="section dtl">
+          <div class="jdl-pesan">Data pemesanan</div>
+          <div class="dtl-pesan">
+            <div>Nama pelayan:</div>
+            <div>Raymond Thymotimannuel</div>
+            <div>Nama pemesan:</div>
+            <div>Ir.H. Mulyono</div>
+            <div>Tanggal pemesanan:</div>
+            <input type="date" value="2021-04-18" />
+            <div>Alamat pemesanan:</div>
+            <div>Jl. Hiu Putih 29 No. 8, Kota Palangka Raya</div>
+          </div>
+        </div>
+        <div class="section dtl">
+          <div class="jdl-bayar">Total keseluruhan</div>
+          <div class="dtl-bayar">
+            <div>Subtotal</div>
+            <div>Rp30.000</div>
+            <div>Biaya pengiriman</div>
+            <div>Rp3.000</div>
+            <div>Pajak:</div>
+            <div>Rp2.000</div>
+            <div>Total pembayaran</div>
+            <div>Rp35.000</div>
+            <div class="metodebayar">
+              <div>Metode pembayaran</div>
+              <br />
+              <input id="BCA" type="radio" name="pembayaran" />
+              <label for="BCA">Bank BCA</label>
+              <input id="BRI" type="radio" name="pembayaran" />
+              <label for="BRI">Bank BRI</label>
+              <input id="OVO" type="radio" name="pembayaran" />
+              <label for="OVO">OVO</label>
+              <input id="Gopay" type="radio" name="pembayaran" />
+              <label for="Gopay">GoPay</label>
+            </div>
+            <button class="bayar">Lanjutkan pembayaran</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>Raymond Thymotimannuel</div>
+      <div>2309106067</div>
+      <div>
+        <a
+          href="https://classroom.google.com/u/0/c/NzEwMjM1MTUyNDc0/a/NzA2MTI4OTQyNjky/details"
+          >Posttest2</a
+        >
+      </div>
+    </div>
+    <script src="logika.js"></script>
+  </body>
+</html>
