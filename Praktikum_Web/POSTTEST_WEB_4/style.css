@@ -1,0 +1,375 @@
+:root {
+  --primary-color: #000f00;
+  --background-color: #f9fef8;
+  --foreground-color: #636363;
+  --gray: #f9f9f9;
+}
+
+.darkmode {
+  --primary-color: #606060;
+  --background-color: #111;
+  --foreground-color: #f9fef8;
+  --gray: #222;
+}
+* {
+  font-family: "Rajdhani", sans-serif;
+  transition: all 0.3s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.topkontainer {
+  margin-top: 8px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+body {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+.navbar {
+  border-bottom: 1px solid #606060;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+}
+.katekon {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+.etalase {
+  width: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.etalase img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.topitemgambar {
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  background-color: gainsboro;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.topitemjudul {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.rating {
+  margin-bottom: 8px;
+}
+.detail {
+  font-weight: bold;
+  color: blue;
+}
+.topitemgambar img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.btn {
+  outline: none;
+  border: none;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--foreground-color);
+}
+
+.opsi {
+  position: fixed;
+  display: flex;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  padding: 8px;
+  padding-top: 3rem;
+  border: 1px solid #e6e6e6;
+  background-color: var(--background-color);
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.opsi.tampil {
+  right: 0;
+  left: 0;
+}
+.searchBar {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #fafaf5;
+}
+
+.navbar-left {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.logo-resto img {
+  width: 100%;
+  height: 100%;
+}
+body {
+  min-height: 2000px;
+}
+.bayar {
+  grid-row-start: 6;
+  grid-column: span 2 / span 2;
+}
+.metodebayar {
+  margin: 8px;
+  grid-column: span 2 / span 2;
+}
+.login,
+.bayar {
+  padding: 12px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+.tombol {
+  position: relative;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  color: white;
+  background-image: url("hero.jpeg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.kontainer {
+  padding: 24px;
+}
+.heading {
+  padding-bottom: 28px;
+}
+.grid-container {
+  margin-top: 16px;
+  display: grid;
+  gap: 15px;
+}
+.section {
+  padding: 24px;
+  background-color: #fafaf5;
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+}
+.item-login {
+  display: flex;
+  justify-content: space-between;
+}
+.gambar {
+  width: 64px;
+}
+.gambar img {
+  width: 100%;
+  object-fit: cover;
+}
+input[type="number"] {
+  width: 40px;
+}
+.jdl-menu {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.hrg-menu {
+  font-weight: 600;
+  font-size: 12px;
+  color: #426b1f;
+  margin-bottom: 7px;
+}
+.dtl-pesan,
+.dtl-bayar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 12px;
+  gap: 4px;
+}
+.jdl-bayar,
+.jdl-pesan {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.profile {
+  display: flex;
+  gap: 16px;
+}
+
+.profile-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile {
+  padding: 24px 0;
+  max-width: 90vw;
+  border-bottom: 1px solid var(--foreground-color);
+  margin: auto;
+}
+
+.footer {
+  padding: 24px 0;
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+a {
+  text-decoration: none;
+  color: var(--foreground-color);
+}
+
+.wishlist {
+  padding: 100px 0;
+  margin: auto;
+  max-width: 90vw;
+  display: grid;
+  gap: 16px;
+}
+
+.wishlist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wishlist-image {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.form-input {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.form-input label {
+  font-weight: 600;
+}
+
+.form-input input {
+  padding: 16px 12px;
+  border-radius: 4px;
+  background-color: var(--gray);
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .opsi {
+    padding-top: 8px;
+    position: static;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-left {
+    width: 30%;
+  }
+  .tombol {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section:nth-child(1) {
+    order: 1;
+  }
+  .section:nth-child(2) {
+    order: 3;
+    align-self: self-start;
+  }
+  .section:nth-child(3) {
+    order: 2;
+  }
+  .section:nth-child(4) {
+    order: 4;
+  }
+  .gambar {
+    width: 128px;
+  }
+  .item-login {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .jual {
+    width: 100%;
+  }
+  .katekon {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .topkontainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .wishlist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
