@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button,
+.submit {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 12px;
+}
